@@ -1,0 +1,5 @@
+columns format version: 1
+3 columns:
+`starred_at` DateTime('UTC')
+`username` String
+`languages` Array(Nested(language String, bytes Float64))

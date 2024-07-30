@@ -22528,3 +22528,157 @@ Revision: 54482
 2024.07.30 22:21:04.143390 [ 690 ] {} <Trace> MergedBlockOutputStream: filled checksums 202407_217_217_0 (state Temporary)
 2024.07.30 22:21:04.156210 [ 690 ] {} <Trace> system.metric_log (df238838-7e27-4806-84c4-d3dddff83efa): Renaming temporary part tmp_insert_202407_217_217_0 to 202407_563_563_0 with tid (1, 1, 00000000-0000-0000-0000-000000000000).
 2024.07.30 22:21:04.158375 [ 690 ] {} <Trace> SystemLog (system.metric_log): Flushed system log up to offset 1639
+2024.07.30 22:21:05.005456 [ 688 ] {} <Trace> AsynchronousMetrics: MemoryTracking: was 979.10 MiB, peak 1.05 GiB, free memory in arenas 5.45 MiB, will set to 981.45 MiB (RSS), difference: 2.35 MiB
+2024.07.30 22:21:09.313466 [ 695 ] {} <Trace> SystemLog (system.asynchronous_metric_log): Flushing system log, 5852 entries to flush up to offset 1374487
+2024.07.30 22:21:09.322583 [ 695 ] {} <Trace> system.asynchronous_metric_log (a75244c6-e8da-4048-ae21-58722c267a12): Trying to reserve 1.00 MiB using storage policy from min volume index 0
+2024.07.30 22:21:09.322767 [ 695 ] {} <Trace> DiskLocal: Reserved 1.00 MiB on local disk `default`, having unreserved 173.59 GiB.
+2024.07.30 22:21:09.325075 [ 695 ] {} <Trace> MergedBlockOutputStream: filled checksums 202407_234_234_0 (state Temporary)
+2024.07.30 22:21:09.327812 [ 695 ] {} <Trace> system.asynchronous_metric_log (a75244c6-e8da-4048-ae21-58722c267a12): Renaming temporary part tmp_insert_202407_234_234_0 to 202407_606_606_0 with tid (1, 1, 00000000-0000-0000-0000-000000000000).
+2024.07.30 22:21:09.329145 [ 324 ] {} <Debug> system.asynchronous_metric_log (a75244c6-e8da-4048-ae21-58722c267a12) (MergerMutator): Selected 6 parts from 202407_1_601_120 to 202407_606_606_0
+2024.07.30 22:21:09.329423 [ 324 ] {} <Trace> system.asynchronous_metric_log (a75244c6-e8da-4048-ae21-58722c267a12): Trying to reserve 1.00 MiB using storage policy from min volume index 0
+2024.07.30 22:21:09.329563 [ 695 ] {} <Trace> SystemLog (system.asynchronous_metric_log): Flushed system log up to offset 1374487
+2024.07.30 22:21:09.329754 [ 324 ] {} <Trace> DiskLocal: Reserved 1.00 MiB on local disk `default`, having unreserved 173.59 GiB.
+2024.07.30 22:21:09.330171 [ 622 ] {a75244c6-e8da-4048-ae21-58722c267a12::202407_1_606_121} <Debug> MergeTask::PrepareStage: Merging 6 parts: from 202407_1_601_120 to 202407_606_606_0 into Wide with storage Full
+2024.07.30 22:21:09.330765 [ 622 ] {a75244c6-e8da-4048-ae21-58722c267a12::202407_1_606_121} <Debug> MergeTask::PrepareStage: Selected MergeAlgorithm: Horizontal
+2024.07.30 22:21:09.331098 [ 622 ] {a75244c6-e8da-4048-ae21-58722c267a12::202407_1_606_121} <Debug> MergeTreeSequentialSource: Reading 431 marks from part 202407_1_601_120, total 3520079 rows starting from the beginning of the part
+2024.07.30 22:21:09.331491 [ 622 ] {a75244c6-e8da-4048-ae21-58722c267a12::202407_1_606_121} <Debug> MergeTreeSequentialSource: Reading 2 marks from part 202407_602_602_0, total 5852 rows starting from the beginning of the part
+2024.07.30 22:21:09.331877 [ 622 ] {a75244c6-e8da-4048-ae21-58722c267a12::202407_1_606_121} <Debug> MergeTreeSequentialSource: Reading 2 marks from part 202407_603_603_0, total 5852 rows starting from the beginning of the part
+2024.07.30 22:21:09.332025 [ 622 ] {a75244c6-e8da-4048-ae21-58722c267a12::202407_1_606_121} <Debug> MergeTreeSequentialSource: Reading 2 marks from part 202407_604_604_0, total 5852 rows starting from the beginning of the part
+2024.07.30 22:21:09.332170 [ 622 ] {a75244c6-e8da-4048-ae21-58722c267a12::202407_1_606_121} <Debug> MergeTreeSequentialSource: Reading 2 marks from part 202407_605_605_0, total 5852 rows starting from the beginning of the part
+2024.07.30 22:21:09.332338 [ 622 ] {a75244c6-e8da-4048-ae21-58722c267a12::202407_1_606_121} <Debug> MergeTreeSequentialSource: Reading 2 marks from part 202407_606_606_0, total 5852 rows starting from the beginning of the part
+2024.07.30 22:21:09.693622 [ 622 ] {a75244c6-e8da-4048-ae21-58722c267a12::202407_1_606_121} <Debug> MergeTask::MergeProjectionsStage: Merge sorted 3549339 rows, containing 5 columns (5 merged, 0 gathered) in 0.363535626 sec., 9763386.986451777 rows/sec., 155.52 MiB/sec.
+2024.07.30 22:21:09.696946 [ 622 ] {a75244c6-e8da-4048-ae21-58722c267a12::202407_1_606_121} <Trace> MergedBlockOutputStream: filled checksums 202407_1_606_121 (state Temporary)
+2024.07.30 22:21:09.707653 [ 622 ] {a75244c6-e8da-4048-ae21-58722c267a12::202407_1_606_121} <Trace> system.asynchronous_metric_log (a75244c6-e8da-4048-ae21-58722c267a12): Renaming temporary part tmp_merge_202407_1_606_121 to 202407_1_606_121 with tid (1, 1, 00000000-0000-0000-0000-000000000000).
+2024.07.30 22:21:09.708203 [ 622 ] {a75244c6-e8da-4048-ae21-58722c267a12::202407_1_606_121} <Trace> system.asynchronous_metric_log (a75244c6-e8da-4048-ae21-58722c267a12) (MergerMutator): Merged 6 parts: [202407_1_601_120, 202407_606_606_0] -> 202407_1_606_121
+2024.07.30 22:21:09.708548 [ 622 ] {} <Debug> MemoryTracker: Peak memory usage background process to apply mutate/merge in table: 18.08 MiB.
+2024.07.30 22:21:10.006278 [ 688 ] {} <Trace> AsynchronousMetrics: MemoryTracking: was 981.49 MiB, peak 1.05 GiB, free memory in arenas 7.09 MiB, will set to 991.66 MiB (RSS), difference: 10.17 MiB
+2024.07.30 22:21:10.023095 [ 49 ] {} <Trace> TCPHandlerFactory: TCP Request. Address: 192.168.65.1:16182
+2024.07.30 22:21:10.023156 [ 721 ] {} <Trace> TCPHandlerFactory: TCP Request. Address: 192.168.65.1:43120
+2024.07.30 22:21:10.023684 [ 49 ] {} <Information> TCPHandler: Client has not sent any data.
+2024.07.30 22:21:10.024072 [ 49 ] {} <Debug> TCPHandler: Done processing connection.
+2024.07.30 22:21:10.024183 [ 721 ] {} <Debug> TCPHandler: Connected Rust SQLDriver version 1.1.0, revision: 54429, database: local, user: panda.
+2024.07.30 22:21:10.024622 [ 721 ] {} <Debug> TCP-Session: 89079180-d5e0-473b-aa52-aea5e6ab3a58 Authenticating user 'panda' from 192.168.65.1:43120
+2024.07.30 22:21:10.024986 [ 721 ] {} <Debug> TCP-Session: 89079180-d5e0-473b-aa52-aea5e6ab3a58 Authenticated with global context as user 259e14be-e5cd-7029-a7a8-c758ceaa00e4
+2024.07.30 22:21:10.025186 [ 721 ] {} <Debug> TCP-Session: 89079180-d5e0-473b-aa52-aea5e6ab3a58 Creating session context with user_id: 259e14be-e5cd-7029-a7a8-c758ceaa00e4
+2024.07.30 22:21:10.026007 [ 721 ] {} <Trace> ContextAccess (panda): Settings: readonly = 0, allow_ddl = true, allow_introspection_functions = false
+2024.07.30 22:21:10.026432 [ 721 ] {} <Trace> ContextAccess (panda): List of all grants: GRANT SHOW, SELECT, INSERT, ALTER, CREATE, DROP, UNDROP TABLE, TRUNCATE, OPTIMIZE, BACKUP, KILL QUERY, KILL TRANSACTION, MOVE PARTITION BETWEEN SHARDS, ACCESS MANAGEMENT, SYSTEM, dictGet, displaySecretsInShowAndSelect, INTROSPECTION, SOURCES, CLUSTER ON *.* WITH GRANT OPTION
+2024.07.30 22:21:10.026582 [ 721 ] {} <Trace> ContextAccess (panda): List of all grants including implicit: GRANT SHOW, SELECT, INSERT, ALTER, CREATE, DROP, UNDROP TABLE, TRUNCATE, OPTIMIZE, BACKUP, KILL QUERY, KILL TRANSACTION, MOVE PARTITION BETWEEN SHARDS, ACCESS MANAGEMENT, SYSTEM, dictGet, displaySecretsInShowAndSelect, INTROSPECTION, SOURCES, CLUSTER ON *.* WITH GRANT OPTION
+2024.07.30 22:21:10.029180 [ 721 ] {} <Trace> ContextAccess (panda): Settings: readonly = 0, allow_ddl = true, allow_introspection_functions = false
+2024.07.30 22:21:10.029436 [ 721 ] {} <Trace> ContextAccess (panda): List of all grants: GRANT SHOW, SELECT, INSERT, ALTER, CREATE, DROP, UNDROP TABLE, TRUNCATE, OPTIMIZE, BACKUP, KILL QUERY, KILL TRANSACTION, MOVE PARTITION BETWEEN SHARDS, ACCESS MANAGEMENT, SYSTEM, dictGet, displaySecretsInShowAndSelect, INTROSPECTION, SOURCES, CLUSTER ON *.* WITH GRANT OPTION
+2024.07.30 22:21:10.029594 [ 721 ] {} <Trace> ContextAccess (panda): List of all grants including implicit: GRANT SHOW, SELECT, INSERT, ALTER, CREATE, DROP, UNDROP TABLE, TRUNCATE, OPTIMIZE, BACKUP, KILL QUERY, KILL TRANSACTION, MOVE PARTITION BETWEEN SHARDS, ACCESS MANAGEMENT, SYSTEM, dictGet, displaySecretsInShowAndSelect, INTROSPECTION, SOURCES, CLUSTER ON *.* WITH GRANT OPTION
+2024.07.30 22:21:10.029752 [ 721 ] {} <Trace> TCP-Session: 89079180-d5e0-473b-aa52-aea5e6ab3a58 Creating query context from session context, user_id: 259e14be-e5cd-7029-a7a8-c758ceaa00e4, parent context user: panda
+2024.07.30 22:21:10.031055 [ 721 ] {248d276f-4a8e-4759-ab74-5570fcccf8a9} <Debug> executeQuery: (from 192.168.65.1:43120, user: panda) CREATE TABLE IF NOT EXISTS local._MOOSE_STATE( timestamp DateTime('UTC') DEFAULT now(), state String )ENGINE = MergeTree PRIMARY KEY timestamp ORDER BY timestamp (stage: Complete)
+2024.07.30 22:21:10.031554 [ 721 ] {248d276f-4a8e-4759-ab74-5570fcccf8a9} <Trace> ContextAccess (panda): Access granted: CREATE TABLE ON local._MOOSE_STATE
+2024.07.30 22:21:10.032510 [ 721 ] {248d276f-4a8e-4759-ab74-5570fcccf8a9} <Debug> TCPHandler: Processed in 0.004312875 sec.
+2024.07.30 22:21:10.033511 [ 721 ] {} <Trace> TCP-Session: 89079180-d5e0-473b-aa52-aea5e6ab3a58 Creating query context from session context, user_id: 259e14be-e5cd-7029-a7a8-c758ceaa00e4, parent context user: panda
+2024.07.30 22:21:10.033834 [ 721 ] {811d2a2e-85c5-483c-ad7b-615f379939ae} <Debug> executeQuery: (from 192.168.65.1:43120, user: panda) INSERT INTO local._MOOSE_STATE (`state`) VALUES (stage: Complete)
+2024.07.30 22:21:10.034072 [ 721 ] {811d2a2e-85c5-483c-ad7b-615f379939ae} <Trace> ContextAccess (panda): Access granted: INSERT(state) ON local._MOOSE_STATE
+2024.07.30 22:21:10.035382 [ 721 ] {811d2a2e-85c5-483c-ad7b-615f379939ae} <Trace> local._MOOSE_STATE (4f5e8d95-9267-4ec7-ae8e-700091e14891): Trying to reserve 1.00 MiB using storage policy from min volume index 0
+2024.07.30 22:21:10.035598 [ 721 ] {811d2a2e-85c5-483c-ad7b-615f379939ae} <Trace> DiskLocal: Reserved 1.00 MiB on local disk `default`, having unreserved 173.59 GiB.
+2024.07.30 22:21:10.039030 [ 721 ] {811d2a2e-85c5-483c-ad7b-615f379939ae} <Trace> MergedBlockOutputStream: filled checksums all_2_2_0 (state Temporary)
+2024.07.30 22:21:10.042541 [ 721 ] {811d2a2e-85c5-483c-ad7b-615f379939ae} <Trace> local._MOOSE_STATE (4f5e8d95-9267-4ec7-ae8e-700091e14891): Renaming temporary part tmp_insert_all_2_2_0 to all_12_12_0 with tid (1, 1, 00000000-0000-0000-0000-000000000000).
+2024.07.30 22:21:10.043635 [ 721 ] {811d2a2e-85c5-483c-ad7b-615f379939ae} <Debug> executeQuery: Read 1 rows, 16.04 KiB in 0.009923 sec., 100.7759750075582 rows/sec., 1.58 MiB/sec.
+2024.07.30 22:21:10.043916 [ 721 ] {811d2a2e-85c5-483c-ad7b-615f379939ae} <Debug> TCPHandler: Processed in 0.010460583 sec.
+2024.07.30 22:21:10.044637 [ 721 ] {} <Debug> TCPHandler: Done processing connection.
+2024.07.30 22:21:10.044986 [ 721 ] {} <Debug> TCP-Session: 89079180-d5e0-473b-aa52-aea5e6ab3a58 Logout, user_id: 259e14be-e5cd-7029-a7a8-c758ceaa00e4
+2024.07.30 22:21:10.425235 [ 702 ] {} <Trace> SystemLog (system.trace_log): Flushing system log, 8 entries to flush up to offset 1550
+2024.07.30 22:21:10.428038 [ 702 ] {} <Trace> system.trace_log (ef0237c9-f555-44b6-9e7f-416c02615470): Trying to reserve 1.00 MiB using storage policy from min volume index 0
+2024.07.30 22:21:10.428373 [ 702 ] {} <Trace> DiskLocal: Reserved 1.00 MiB on local disk `default`, having unreserved 173.59 GiB.
+2024.07.30 22:21:10.433349 [ 702 ] {} <Trace> MergedBlockOutputStream: filled checksums 202407_107_107_0 (state Temporary)
+2024.07.30 22:21:10.440532 [ 702 ] {} <Trace> system.trace_log (ef0237c9-f555-44b6-9e7f-416c02615470): Renaming temporary part tmp_insert_202407_107_107_0 to 202407_268_268_0 with tid (1, 1, 00000000-0000-0000-0000-000000000000).
+2024.07.30 22:21:10.442782 [ 702 ] {} <Trace> SystemLog (system.trace_log): Flushed system log up to offset 1550
+2024.07.30 22:21:11.003673 [ 688 ] {} <Trace> AsynchronousMetrics: MemoryTracking: was 991.70 MiB, peak 1.05 GiB, free memory in arenas 6.70 MiB, will set to 985.01 MiB (RSS), difference: -6.69 MiB
+2024.07.30 22:21:11.664558 [ 690 ] {} <Trace> SystemLog (system.metric_log): Flushing system log, 7 entries to flush up to offset 1646
+2024.07.30 22:21:11.689532 [ 690 ] {} <Trace> system.metric_log (df238838-7e27-4806-84c4-d3dddff83efa): Trying to reserve 1.00 MiB using storage policy from min volume index 0
+2024.07.30 22:21:11.690047 [ 690 ] {} <Trace> DiskLocal: Reserved 1.00 MiB on local disk `default`, having unreserved 173.59 GiB.
+2024.07.30 22:21:11.699559 [ 690 ] {} <Trace> MergedBlockOutputStream: filled checksums 202407_218_218_0 (state Temporary)
+2024.07.30 22:21:11.712080 [ 690 ] {} <Trace> system.metric_log (df238838-7e27-4806-84c4-d3dddff83efa): Renaming temporary part tmp_insert_202407_218_218_0 to 202407_564_564_0 with tid (1, 1, 00000000-0000-0000-0000-000000000000).
+2024.07.30 22:21:11.714281 [ 690 ] {} <Trace> SystemLog (system.metric_log): Flushed system log up to offset 1646
+2024.07.30 22:21:12.003940 [ 688 ] {} <Trace> AsynchronousMetrics: MemoryTracking: was 985.60 MiB, peak 1.05 GiB, free memory in arenas 6.52 MiB, will set to 987.20 MiB (RSS), difference: 1.60 MiB
+2024.07.30 22:21:13.003360 [ 688 ] {} <Trace> AsynchronousMetrics: MemoryTracking: was 987.20 MiB, peak 1.05 GiB, free memory in arenas 5.54 MiB, will set to 972.96 MiB (RSS), difference: -14.24 MiB
+2024.07.30 22:21:14.003076 [ 688 ] {} <Trace> AsynchronousMetrics: MemoryTracking: was 972.96 MiB, peak 1.05 GiB, free memory in arenas 4.42 MiB, will set to 956.20 MiB (RSS), difference: -16.77 MiB
+2024.07.30 22:21:15.697164 [ 316 ] {} <Debug> DNSResolver: Updating DNS cache
+2024.07.30 22:21:15.698931 [ 316 ] {} <Debug> DNSResolver: Updated DNS cache
+2024.07.30 22:21:16.002669 [ 688 ] {} <Trace> AsynchronousMetrics: MemoryTracking: was 956.20 MiB, peak 1.05 GiB, free memory in arenas 3.96 MiB, will set to 950.89 MiB (RSS), difference: -5.30 MiB
+2024.07.30 22:21:16.332123 [ 695 ] {} <Trace> SystemLog (system.asynchronous_metric_log): Flushing system log, 5852 entries to flush up to offset 1380339
+2024.07.30 22:21:16.339603 [ 695 ] {} <Trace> system.asynchronous_metric_log (a75244c6-e8da-4048-ae21-58722c267a12): Trying to reserve 1.00 MiB using storage policy from min volume index 0
+2024.07.30 22:21:16.339916 [ 695 ] {} <Trace> DiskLocal: Reserved 1.00 MiB on local disk `default`, having unreserved 173.59 GiB.
+2024.07.30 22:21:16.343546 [ 695 ] {} <Trace> MergedBlockOutputStream: filled checksums 202407_235_235_0 (state Temporary)
+2024.07.30 22:21:16.347219 [ 695 ] {} <Trace> system.asynchronous_metric_log (a75244c6-e8da-4048-ae21-58722c267a12): Renaming temporary part tmp_insert_202407_235_235_0 to 202407_607_607_0 with tid (1, 1, 00000000-0000-0000-0000-000000000000).
+2024.07.30 22:21:16.348433 [ 695 ] {} <Trace> SystemLog (system.asynchronous_metric_log): Flushed system log up to offset 1380339
+2024.07.30 22:21:16.418253 [ 708 ] {} <Trace> SystemLog (system.query_log): Flushing system log, 4 entries to flush up to offset 56
+2024.07.30 22:21:16.424048 [ 708 ] {} <Trace> system.query_log (17065dd4-b0e1-434b-a0f4-7a3680fe3445): Trying to reserve 1.00 MiB using storage policy from min volume index 0
+2024.07.30 22:21:16.424362 [ 708 ] {} <Trace> DiskLocal: Reserved 1.00 MiB on local disk `default`, having unreserved 173.59 GiB.
+2024.07.30 22:21:16.428180 [ 708 ] {} <Trace> MergedBlockOutputStream: filled checksums 202407_5_5_0 (state Temporary)
+2024.07.30 22:21:16.431968 [ 708 ] {} <Trace> system.query_log (17065dd4-b0e1-434b-a0f4-7a3680fe3445): Renaming temporary part tmp_insert_202407_5_5_0 to 202407_36_36_0 with tid (1, 1, 00000000-0000-0000-0000-000000000000).
+2024.07.30 22:21:16.433735 [ 708 ] {} <Trace> SystemLog (system.query_log): Flushed system log up to offset 56
+2024.07.30 22:21:16.516764 [ 697 ] {} <Trace> SystemLog (system.part_log): Flushing system log, 1 entries to flush up to offset 8
+2024.07.30 22:21:16.521224 [ 697 ] {} <Trace> system.part_log (d5f44f50-ec25-4b15-b3e9-bde37c961d97): Trying to reserve 1.00 MiB using storage policy from min volume index 0
+2024.07.30 22:21:16.521590 [ 697 ] {} <Trace> DiskLocal: Reserved 1.00 MiB on local disk `default`, having unreserved 173.59 GiB.
+2024.07.30 22:21:16.526441 [ 697 ] {} <Trace> MergedBlockOutputStream: filled checksums 202407_6_6_0 (state Temporary)
+2024.07.30 22:21:16.532242 [ 697 ] {} <Trace> system.part_log (d5f44f50-ec25-4b15-b3e9-bde37c961d97): Renaming temporary part tmp_insert_202407_6_6_0 to 202407_29_29_0 with tid (1, 1, 00000000-0000-0000-0000-000000000000).
+2024.07.30 22:21:16.533700 [ 333 ] {} <Debug> system.part_log (d5f44f50-ec25-4b15-b3e9-bde37c961d97) (MergerMutator): Selected 4 parts from 202407_1_25_6 to 202407_28_28_0
+2024.07.30 22:21:16.534213 [ 333 ] {} <Trace> system.part_log (d5f44f50-ec25-4b15-b3e9-bde37c961d97): Trying to reserve 1.00 MiB using storage policy from min volume index 0
+2024.07.30 22:21:16.534874 [ 697 ] {} <Trace> SystemLog (system.part_log): Flushed system log up to offset 8
+2024.07.30 22:21:16.535057 [ 333 ] {} <Trace> DiskLocal: Reserved 1.00 MiB on local disk `default`, having unreserved 173.59 GiB.
+2024.07.30 22:21:16.535758 [ 623 ] {d5f44f50-ec25-4b15-b3e9-bde37c961d97::202407_1_28_7} <Debug> MergeTask::PrepareStage: Merging 4 parts: from 202407_1_25_6 to 202407_28_28_0 into Compact with storage Full
+2024.07.30 22:21:16.536953 [ 623 ] {d5f44f50-ec25-4b15-b3e9-bde37c961d97::202407_1_28_7} <Debug> MergeTask::PrepareStage: Selected MergeAlgorithm: Horizontal
+2024.07.30 22:21:16.537093 [ 623 ] {d5f44f50-ec25-4b15-b3e9-bde37c961d97::202407_1_28_7} <Debug> MergeTreeSequentialSource: Reading 2 marks from part 202407_1_25_6, total 48 rows starting from the beginning of the part
+2024.07.30 22:21:16.537394 [ 623 ] {d5f44f50-ec25-4b15-b3e9-bde37c961d97::202407_1_28_7} <Debug> MergeTreeSequentialSource: Reading 2 marks from part 202407_26_26_0, total 1 rows starting from the beginning of the part
+2024.07.30 22:21:16.537603 [ 623 ] {d5f44f50-ec25-4b15-b3e9-bde37c961d97::202407_1_28_7} <Debug> MergeTreeSequentialSource: Reading 2 marks from part 202407_27_27_0, total 2 rows starting from the beginning of the part
+2024.07.30 22:21:16.537894 [ 623 ] {d5f44f50-ec25-4b15-b3e9-bde37c961d97::202407_1_28_7} <Debug> MergeTreeSequentialSource: Reading 2 marks from part 202407_28_28_0, total 2 rows starting from the beginning of the part
+2024.07.30 22:21:16.550265 [ 623 ] {d5f44f50-ec25-4b15-b3e9-bde37c961d97::202407_1_28_7} <Debug> MergeTask::MergeProjectionsStage: Merge sorted 53 rows, containing 28 columns (28 merged, 0 gathered) in 0.014672417 sec., 3612.2201270588207 rows/sec., 2.63 MiB/sec.
+2024.07.30 22:21:16.551029 [ 623 ] {d5f44f50-ec25-4b15-b3e9-bde37c961d97::202407_1_28_7} <Trace> MergedBlockOutputStream: filled checksums 202407_1_28_7 (state Temporary)
+2024.07.30 22:21:16.555385 [ 623 ] {d5f44f50-ec25-4b15-b3e9-bde37c961d97::202407_1_28_7} <Trace> system.part_log (d5f44f50-ec25-4b15-b3e9-bde37c961d97): Renaming temporary part tmp_merge_202407_1_28_7 to 202407_1_28_7 with tid (1, 1, 00000000-0000-0000-0000-000000000000).
+2024.07.30 22:21:16.555903 [ 623 ] {d5f44f50-ec25-4b15-b3e9-bde37c961d97::202407_1_28_7} <Trace> system.part_log (d5f44f50-ec25-4b15-b3e9-bde37c961d97) (MergerMutator): Merged 4 parts: [202407_1_25_6, 202407_28_28_0] -> 202407_1_28_7
+2024.07.30 22:21:16.556408 [ 623 ] {} <Debug> MemoryTracker: Peak memory usage background process to apply mutate/merge in table: 3.47 MiB.
+2024.07.30 22:21:17.005145 [ 688 ] {} <Trace> AsynchronousMetrics: MemoryTracking: was 951.01 MiB, peak 1.05 GiB, free memory in arenas 5.38 MiB, will set to 954.03 MiB (RSS), difference: 3.01 MiB
+2024.07.30 22:21:17.009993 [ 663 ] {} <Trace> system.metric_log (df238838-7e27-4806-84c4-d3dddff83efa): Found 6 old parts to remove. Parts: [202407_1_496_99, 202407_497_497_0, 202407_498_498_0, 202407_499_499_0, 202407_500_500_0, 202407_501_501_0]
+2024.07.30 22:21:17.010275 [ 663 ] {} <Debug> system.metric_log (df238838-7e27-4806-84c4-d3dddff83efa): Removing 6 parts from filesystem (serially): Parts: [202407_1_496_99, 202407_497_497_0, 202407_498_498_0, 202407_499_499_0, 202407_500_500_0, 202407_501_501_0]
+2024.07.30 22:21:17.038289 [ 663 ] {} <Debug> system.metric_log (df238838-7e27-4806-84c4-d3dddff83efa): Removing 6 parts from memory: Parts: [202407_1_496_99, 202407_497_497_0, 202407_498_498_0, 202407_499_499_0, 202407_500_500_0, 202407_501_501_0]
+2024.07.30 22:21:18.004010 [ 688 ] {} <Trace> AsynchronousMetrics: MemoryTracking: was 950.03 MiB, peak 1.05 GiB, free memory in arenas 3.79 MiB, will set to 941.84 MiB (RSS), difference: -8.18 MiB
+2024.07.30 22:21:19.216159 [ 690 ] {} <Trace> SystemLog (system.metric_log): Flushing system log, 8 entries to flush up to offset 1654
+2024.07.30 22:21:19.230136 [ 690 ] {} <Trace> system.metric_log (df238838-7e27-4806-84c4-d3dddff83efa): Trying to reserve 1.00 MiB using storage policy from min volume index 0
+2024.07.30 22:21:19.230274 [ 690 ] {} <Trace> DiskLocal: Reserved 1.00 MiB on local disk `default`, having unreserved 173.58 GiB.
+2024.07.30 22:21:19.235794 [ 690 ] {} <Trace> MergedBlockOutputStream: filled checksums 202407_219_219_0 (state Temporary)
+2024.07.30 22:21:19.243652 [ 690 ] {} <Trace> system.metric_log (df238838-7e27-4806-84c4-d3dddff83efa): Renaming temporary part tmp_insert_202407_219_219_0 to 202407_565_565_0 with tid (1, 1, 00000000-0000-0000-0000-000000000000).
+2024.07.30 22:21:19.245278 [ 690 ] {} <Trace> SystemLog (system.metric_log): Flushed system log up to offset 1654
+2024.07.30 22:21:20.002728 [ 688 ] {} <Trace> AsynchronousMetrics: MemoryTracking: was 941.03 MiB, peak 1.05 GiB, free memory in arenas 3.84 MiB, will set to 942.38 MiB (RSS), difference: 1.35 MiB
+2024.07.30 22:21:23.350369 [ 695 ] {} <Trace> SystemLog (system.asynchronous_metric_log): Flushing system log, 5852 entries to flush up to offset 1386191
+2024.07.30 22:21:23.358086 [ 695 ] {} <Trace> system.asynchronous_metric_log (a75244c6-e8da-4048-ae21-58722c267a12): Trying to reserve 1.00 MiB using storage policy from min volume index 0
+2024.07.30 22:21:23.358430 [ 695 ] {} <Trace> DiskLocal: Reserved 1.00 MiB on local disk `default`, having unreserved 173.55 GiB.
+2024.07.30 22:21:23.361662 [ 695 ] {} <Trace> MergedBlockOutputStream: filled checksums 202407_236_236_0 (state Temporary)
+2024.07.30 22:21:23.364410 [ 695 ] {} <Trace> system.asynchronous_metric_log (a75244c6-e8da-4048-ae21-58722c267a12): Renaming temporary part tmp_insert_202407_236_236_0 to 202407_608_608_0 with tid (1, 1, 00000000-0000-0000-0000-000000000000).
+2024.07.30 22:21:23.365234 [ 695 ] {} <Trace> SystemLog (system.asynchronous_metric_log): Flushed system log up to offset 1386191
+2024.07.30 22:21:24.003250 [ 688 ] {} <Trace> AsynchronousMetrics: MemoryTracking: was 942.02 MiB, peak 1.05 GiB, free memory in arenas 2.79 MiB, will set to 936.96 MiB (RSS), difference: -5.06 MiB
+2024.07.30 22:21:24.746382 [ 47 ] {} <Trace> BaseDaemon: Received signal 15
+2024.07.30 22:21:24.749522 [ 47 ] {} <Information> Application: Received termination signal (Terminated)
+2024.07.30 22:21:24.749762 [ 1 ] {} <Debug> Application: Received termination signal.
+2024.07.30 22:21:24.750044 [ 1 ] {} <Debug> Application: Waiting for current connections to close.
+2024.07.30 22:21:25.001559 [ 688 ] {} <Trace> AsynchronousMetrics: MemoryTracking: was 936.95 MiB, peak 1.05 GiB, free memory in arenas 2.32 MiB, will set to 935.41 MiB (RSS), difference: -1.54 MiB
+2024.07.30 22:21:25.112348 [ 1 ] {} <Warning> Application: Closed all listening sockets. Waiting for 1 outstanding connections.
+2024.07.30 22:21:26.748420 [ 690 ] {} <Trace> SystemLog (system.metric_log): Flushing system log, 8 entries to flush up to offset 1662
+2024.07.30 22:21:26.764547 [ 690 ] {} <Trace> system.metric_log (df238838-7e27-4806-84c4-d3dddff83efa): Trying to reserve 1.00 MiB using storage policy from min volume index 0
+2024.07.30 22:21:26.764722 [ 690 ] {} <Trace> DiskLocal: Reserved 1.00 MiB on local disk `default`, having unreserved 173.55 GiB.
+2024.07.30 22:21:26.770925 [ 690 ] {} <Trace> MergedBlockOutputStream: filled checksums 202407_220_220_0 (state Temporary)
+2024.07.30 22:21:26.779114 [ 690 ] {} <Trace> system.metric_log (df238838-7e27-4806-84c4-d3dddff83efa): Renaming temporary part tmp_insert_202407_220_220_0 to 202407_566_566_0 with tid (1, 1, 00000000-0000-0000-0000-000000000000).
+2024.07.30 22:21:26.779733 [ 398 ] {} <Debug> system.metric_log (df238838-7e27-4806-84c4-d3dddff83efa) (MergerMutator): Selected 6 parts from 202407_1_561_112 to 202407_566_566_0
+2024.07.30 22:21:26.779840 [ 398 ] {} <Trace> system.metric_log (df238838-7e27-4806-84c4-d3dddff83efa): Trying to reserve 1.06 MiB using storage policy from min volume index 0
+2024.07.30 22:21:26.780852 [ 690 ] {} <Trace> SystemLog (system.metric_log): Flushed system log up to offset 1662
+2024.07.30 22:21:26.780864 [ 398 ] {} <Trace> DiskLocal: Reserved 1.06 MiB on local disk `default`, having unreserved 173.55 GiB.
+2024.07.30 22:21:26.781105 [ 622 ] {df238838-7e27-4806-84c4-d3dddff83efa::202407_1_566_113} <Debug> MergeTask::PrepareStage: Merging 6 parts: from 202407_1_561_112 to 202407_566_566_0 into Compact with storage Full
+2024.07.30 22:21:26.786020 [ 622 ] {df238838-7e27-4806-84c4-d3dddff83efa::202407_1_566_113} <Debug> MergeTask::PrepareStage: Selected MergeAlgorithm: Horizontal
+2024.07.30 22:21:26.786592 [ 622 ] {df238838-7e27-4806-84c4-d3dddff83efa::202407_1_566_113} <Debug> MergeTreeSequentialSource: Reading 4 marks from part 202407_1_561_112, total 4223 rows starting from the beginning of the part
+2024.07.30 22:21:26.789324 [ 622 ] {df238838-7e27-4806-84c4-d3dddff83efa::202407_1_566_113} <Debug> MergeTreeSequentialSource: Reading 2 marks from part 202407_562_562_0, total 7 rows starting from the beginning of the part
+2024.07.30 22:21:26.792313 [ 622 ] {df238838-7e27-4806-84c4-d3dddff83efa::202407_1_566_113} <Debug> MergeTreeSequentialSource: Reading 2 marks from part 202407_563_563_0, total 8 rows starting from the beginning of the part
+2024.07.30 22:21:26.795496 [ 622 ] {df238838-7e27-4806-84c4-d3dddff83efa::202407_1_566_113} <Debug> MergeTreeSequentialSource: Reading 2 marks from part 202407_564_564_0, total 7 rows starting from the beginning of the part
+2024.07.30 22:21:26.798547 [ 622 ] {df238838-7e27-4806-84c4-d3dddff83efa::202407_1_566_113} <Debug> MergeTreeSequentialSource: Reading 2 marks from part 202407_565_565_0, total 8 rows starting from the beginning of the part
+2024.07.30 22:21:26.801872 [ 622 ] {df238838-7e27-4806-84c4-d3dddff83efa::202407_1_566_113} <Debug> MergeTreeSequentialSource: Reading 2 marks from part 202407_566_566_0, total 8 rows starting from the beginning of the part
+2024.07.30 22:21:26.867685 [ 622 ] {df238838-7e27-4806-84c4-d3dddff83efa::202407_1_566_113} <Debug> MergeTask::MergeProjectionsStage: Merge sorted 4261 rows, containing 781 columns (781 merged, 0 gathered) in 0.086663708 sec., 49167.06310327732 rows/sec., 28.23 MiB/sec.
+2024.07.30 22:21:26.869888 [ 622 ] {df238838-7e27-4806-84c4-d3dddff83efa::202407_1_566_113} <Trace> MergedBlockOutputStream: filled checksums 202407_1_566_113 (state Temporary)
+2024.07.30 22:21:26.878485 [ 622 ] {df238838-7e27-4806-84c4-d3dddff83efa::202407_1_566_113} <Trace> system.metric_log (df238838-7e27-4806-84c4-d3dddff83efa): Renaming temporary part tmp_merge_202407_1_566_113 to 202407_1_566_113 with tid (1, 1, 00000000-0000-0000-0000-000000000000).
+2024.07.30 22:21:26.878840 [ 622 ] {df238838-7e27-4806-84c4-d3dddff83efa::202407_1_566_113} <Trace> system.metric_log (df238838-7e27-4806-84c4-d3dddff83efa) (MergerMutator): Merged 6 parts: [202407_1_561_112, 202407_566_566_0] -> 202407_1_566_113
+2024.07.30 22:21:26.880159 [ 622 ] {} <Debug> MemoryTracker: Peak memory usage background process to apply mutate/merge in table: 52.11 MiB.
+2024.07.30 22:21:27.003471 [ 688 ] {} <Trace> AsynchronousMetrics: MemoryTracking: was 940.27 MiB, peak 1.05 GiB, free memory in arenas 4.88 MiB, will set to 979.11 MiB (RSS), difference: 38.84 MiB
+2024.07.30 22:21:30.140377 [ 1 ] {} <Warning> Application: Closed connections. But 1 remain. Tip: To increase wait time add to config: <shutdown_wait_unfinished>60</shutdown_wait_unfinished>
+2024.07.30 22:21:30.141642 [ 1 ] {} <Warning> Application: Will shutdown forcefully.
