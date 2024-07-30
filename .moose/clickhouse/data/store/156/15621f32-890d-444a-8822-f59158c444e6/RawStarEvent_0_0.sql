@@ -1,4 +1,4 @@
-ATTACH TABLE _ UUID '2cd221ef-4275-43ce-91bb-f73b442b264d'
+ATTACH TABLE _ UUID 'ee4e2bd2-35f4-49fe-814a-56b6022bda44'
 (
     `action` String,
     `organization` Nested(avatar_url String, description String, events_url String, hooks_url String, id Float64, issues_url String, login String, members_url String, node_id String, public_members_url String, repos_url String, url String),

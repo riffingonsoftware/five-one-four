@@ -144,3 +144,9 @@ export interface RawStarEvent{
     };
     starred_at: string;
 }
+
+export interface ProcessedStarEvent {
+    starred_at: Key<Date>;
+    username: string;
+    languages: Array<{language: string, bytes: number}>
+}

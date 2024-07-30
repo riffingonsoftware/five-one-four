@@ -1,4 +1,0 @@
-columns format version: 1
-2 columns:
-`timestamp` DateTime('UTC')
-`state` String
