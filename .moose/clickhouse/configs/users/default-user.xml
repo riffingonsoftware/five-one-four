@@ -1,0 +1,18 @@
+    <clickhouse>
+      <!-- Docs: <https://clickhouse.com/docs/en/operations/settings/settings_users/> -->
+      <users>
+        <!-- Remove default user -->
+        <default remove="remove">
+        </default>
+
+        <panda>
+          <profile>default</profile>
+          <networks>
+            <ip>::/0</ip>
+          </networks>
+          <password>pandapass</password>
+          <quota>default</quota>
+          <access_management>1</access_management>
+        </panda>
+      </users>
+    </clickhouse>

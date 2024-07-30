@@ -1,0 +1,22 @@
+{
+  "name": "moose-github-analytics",
+  "version": "0.0",
+  "scripts": {
+    "dev": "moose-cli dev",
+    "moose": "moose-cli",
+    "build": "moose-cli build --docker"
+  },
+  "dependencies": {
+    "fastq": "1.17.1",
+    "@clickhouse/client-web": "1.1.0",
+    "@514labs/moose-lib": "latest",
+    "kafkajs": "2.2.4"
+  },
+  "devDependencies": {
+    "ts-patch": "~3.2.0",
+    "@514labs/moose-cli": "latest",
+    "typescript": "~5.4.0",
+    "@types/node": "^20.12.12"
+  },
+  "packageManager": "pnpm@8.9.2+sha1.5f2fa48d614263457cf5d7fb7be8b878da318d87"
+}
